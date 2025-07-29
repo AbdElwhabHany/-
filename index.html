@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>بوفيه على درب النبي نرتقي - قائمة الطعام</title>
+
+  <!-- Bootstrap RTL -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" rel="stylesheet" />
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <style>
+    body {
+      background: linear-gradient(135deg, #fffdf5, #f0f8ff);
+      font-family: 'Tajawal', sans-serif;
+    }
+
+    .top-nav {
+      position: sticky;
+      top: 0;
+      z-index: 9999;
+      background-color: #fff8f0;
+      padding: 10px 15px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .top-nav a {
+      padding: 8px 16px;
+      background-color: #d35400;
+      color: white;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .top-nav a:hover,
+    .top-nav a:focus {
+      background-color: #a04000;
+      transform: scale(1.05);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    }
+
+    .menu-section h4 {
+      color: #d35400;
+    }
+
+    .list-group-item {
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    .list-group-item:hover {
+      background-color: #fdf2e9;
+      transform: translateX(5px);
+    }
+
+    h1, h4 {
+      color: #d35400;
+    }
+
+    footer {
+      background-color: #fff3e0;
+      color: #6e2c00;
+    }
+  </style>
+</head>
+<body>
+
+<!-- أزرار النقل السريع أعلى الصفحة -->
+<div class="top-nav">
+  <a href="#main-dishes">الأطباق الرئيسية</a>
+  <a href="#desserts">الحلويات</a>
+  <a href="#drinks">العصائر</a>
+  <a href="#top">🔝 لأعلى</a>
+</div>
+
+<div class="container mt-5" id="top">
+  <div class="text-center mb-4">
+    <h1><i class="fas fa-utensils"></i> بوفيه على درب النبي نرتقي - قائمة الطعام</h1>
+    <p class="lead">تشكيلة راقية من الأطباق الرئيسية والحلويات والعصائر</p>
+  </div>
+
+  <!-- الأطباق الرئيسية -->
+  <div id="main-dishes" class="card p-4 menu-section">
+    <h4 class="mb-3"><i class="fas fa-drumstick-bite me-2"></i> الأطباق الرئيسية</h4>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">1. منسف كبسة</li>
+      <li class="list-group-item">2. سلطة مقالي</li>
+      <li class="list-group-item">3. صحن معجنات</li>
+      <li class="list-group-item">4. مكرونة باشاميل</li>
+      <li class="list-group-item">5. برجر لحم</li>
+      <li class="list-group-item">6. بيتزا</li>
+      <li class="list-group-item">7. باخمري</li>
+      <li class="list-group-item">8. ورق عنب</li>
+      <li class="list-group-item">9. ملفوف</li>
+      <li class="list-group-item">10. ---</li>
+      <li class="list-group-item">11. ---</li>
+      <li class="list-group-item">12. ---</li>
+    </ul>
+  </div>
+
+  <!-- الحلويات -->
+  <div id="desserts" class="card p-4 menu-section">
+    <h4 class="mb-3"><i class="fas fa-ice-cream me-2"></i> الحلويات</h4>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">1. بسبوسة بالمكسرات</li>
+      <li class="list-group-item">2. حلا طري</li>
+      <li class="list-group-item">3. كوكيز</li>
+      <li class="list-group-item">4. حلا شعيرية</li>
+      <li class="list-group-item">5. كب كيك</li>
+      <li class="list-group-item">6. آيس كريم باللوتس</li>
+      <li class="list-group-item">7. كيك</li>
+      <li class="list-group-item">8. بسبوسة</li>
+      <li class="list-group-item">9. ---</li>
+      <li class="list-group-item">10. ---</li>
+      <li class="list-group-item">11. ---</li>
+      <li class="list-group-item">12. ---</li>
+    </ul>
+  </div>
+
+  <!-- العصائر -->
+  <div id="drinks" class="card p-4 menu-section">
+    <h4 class="mb-3"><i class="fas fa-glass-whiskey me-2"></i> العصائر</h4>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">1. عصير ليمون</li>
+      <li class="list-group-item">2. عصير فواكه مشكلة</li>
+      <li class="list-group-item">3. عصير تفاح</li>
+    </ul>
+  </div>
+
+  <!-- الراعي والشكر -->
+  <div class="text-center mt-5">
+    <p class="fw-bold">برعاية: <span class="text-primary">أسرة عبدالرحمن بن عوف</span> و <span class="text-success">أسرة أسامة بن زيد</span></p>
+    <p class="text-muted">الشكر الوافر لإدارة تحفيظ <strong>عبدالله بن عبيد</strong></p>
+    <p class="small">جميع الحقوق محفوظة &copy; <strong>عبد الوهاب هاني الأزهري</strong></p>
+  </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
